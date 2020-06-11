@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Disease_Activity"
+    android:padding="10dp"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        style="@style/TextStyle_bigHeader"
+        android:layout_gravity="center"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ข้อมูลพื้นฐาน"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/TextStyle_smallHeader"
+            android:text="ระบุโรคประจำตัว"
+            android:textSize="32dp"
+            />
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle_smallHeader"
+            android:text="โรคเบาหวาน"
+            android:onClick="onMedicalChecked"
+            />
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle_smallHeader"
+            android:text="โรคความดันโลหิต"
+            android:onClick="onMedicalChecked"
+            />
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle_smallHeader"
+            android:text="โรคไขมันในเลือดสูง"
+            android:onClick="onMedicalChecked"
+            />
+        <CheckBox
+            android:id="@+id/check4"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle_smallHeader"
+            android:text="โรคไตเรื้อรัง"
+            android:onClick="onMedicalChecked"
+            />
+        <CheckBox
+            android:id="@+id/check5"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle_smallHeader"
+            android:text="ไม่เป็นโรคใด ๆ ข้างต้น"
+            android:textColor="@color/warningRed"
+            android:onClick="onNonMedicalChecked"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_margin="5px"
+            android:text="กรุณากรอกข้อมูลให้ครบถ้วน\nก่อนดำเนินการขั้นต่อไป"
+            android:textColor="@color/warningRed"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_gravity="bottom|right">
+
+            <ImageButton
+                android:id="@+id/buttonNext3"
+                style="@style/TextStyle_Button_Enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_noclickable_next"
+                android:paddingLeft="50dp"
+                android:paddingTop="25dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="25dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

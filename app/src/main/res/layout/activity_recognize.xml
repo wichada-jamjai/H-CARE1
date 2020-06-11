@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".Recognize_Activity">
+
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:background="@color/myLightPink"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="กำลังตรวจจับกิจกรรม"
+        style="@style/TextStyle_bigHeader"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+        <ImageView
+            android:id="@+id/showActivity"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/question">
+
+        </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignStart="@id/text_label"
+                android:layout_alignParentStart="true"
+                android:gravity="right"
+                android:text="@string/activity_label"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/text_label"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:text="กำลังตรวจจับ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_alignStart="@id/text_confidence"
+                android:layout_alignParentStart="true"
+                android:text="@string/confidence"
+                android:textSize="18dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/text_confidence"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="กำลังตรวจจับ"
+                android:textSize="18dp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Chronometer
+                    android:id="@+id/ch_walk"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStyle_smallHeader"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Chronometer
+                    android:id="@+id/ch_run"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStyle_smallHeader"
+                    android:text="การวิ่ง"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/pink_shadow"
+        android:text="หยุดตรวจจับ"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

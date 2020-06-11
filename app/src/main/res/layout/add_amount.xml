@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Check_Select_Activity"
+    android:orientation="vertical"
+    android:id="@+id/amount"
+    >
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/amountEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Name_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="#FBDADA"
+            style="@style/TextStyle_bigHeader"
+            android:text="ระบุปริมาณของวัตถุดิบ" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/rbNo"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/cup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ระบุเป็นถ้วย"
+                        android:textSize="24dp"
+                        />
+
+                    <EditText
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:id="@+id/edt1"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ระบุเป็นกรัม"
+                        android:textSize="24dp"
+                       />
+
+                    <EditText
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:id="@+id/edt2"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addcal"
+                android:background="@drawable/rounded_pink_background"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="24dp"
+                android:text="เพิ่ม"
+                android:textSize="24dp" />
+        </LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>

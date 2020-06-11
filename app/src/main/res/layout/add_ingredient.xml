@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Ingredient_Activity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:padding="10dp"
+        android:background="@color/myLightPink"
+        style="@style/TextStyle_bigHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ระบุวัตถุดิบอาหาร" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="***ปริมาณวัตถุดิบสำหรับอาหาร 1 มื้อ***" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_weight="1"
+    >
+       <LinearLayout
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add01"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_add_button"
+            android:text="+ เพิ่มวัตถุดิบ"
+            android:textSize="16dp"
+
+            />
+           <Button
+               android:id="@+id/add02"
+               android:layout_width="256dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="12dp"
+               android:background="@drawable/custom_add_button"
+               android:text="+ เพิ่มวัตถุดิบ"
+               android:textSize="16dp"
+               android:visibility="gone"
+
+               />
+           <Button
+           android:id="@+id/add03"
+           android:layout_width="256dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_margin="12dp"
+           android:background="@drawable/custom_add_button"
+           android:text="+ เพิ่มวัตถุดิบ"
+           android:textSize="16dp"
+           android:visibility="gone"
+           />
+           <Button
+               android:id="@+id/add04"
+               android:layout_width="256dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="12dp"
+               android:background="@drawable/custom_add_button"
+               android:text="+ เพิ่มวัตถุดิบ"
+               android:textSize="16dp"
+               android:visibility="gone"
+               />
+           <Button
+               android:id="@+id/add05"
+               android:layout_width="256dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="12dp"
+               android:background="@drawable/custom_add_button"
+               android:text="+ เพิ่มวัตถุดิบ"
+               android:textSize="16dp"
+               android:visibility="gone"
+               />
+           <Button
+               android:id="@+id/add06"
+               android:layout_width="256dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="12dp"
+               android:background="@drawable/custom_add_button"
+               android:text="+ เพิ่มวัตถุดิบ"
+               android:textSize="16dp"
+               android:visibility="gone"
+               />
+           <Button
+               android:id="@+id/add07"
+               android:layout_width="256dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="12dp"
+               android:background="@drawable/custom_add_button"
+               android:text="+ เพิ่มวัตถุดิบ"
+               android:textSize="16dp"
+               android:visibility="gone"
+               />
+           <Button
+               android:id="@+id/add08"
+               android:layout_width="256dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="12dp"
+               android:background="@drawable/custom_add_button"
+               android:text="+ เพิ่มวัตถุดิบ"
+               android:textSize="16dp"
+               android:visibility="gone"
+               />
+           <Button
+               android:id="@+id/add09"
+               android:layout_width="256dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="12dp"
+               android:background="@drawable/custom_add_button"
+               android:text="+ เพิ่มวัตถุดิบ"
+               android:textSize="16dp"
+               android:visibility="gone"
+               />
+           <Button
+               android:id="@+id/add10"
+               android:layout_width="256dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="12dp"
+               android:background="@drawable/custom_add_button"
+               android:text="+ เพิ่มวัตถุดิบ"
+               android:textSize="16dp"
+               android:visibility="gone"
+               />
+       </LinearLayout>
+
+
+
+</ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/cal"
+                style="@style/TextStyle_smallHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="พลังงาน : "
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="โปรตีน : "
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/cal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                style="@style/TextStyle_smallHeader"
+                android:text="0"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="0"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/finishBtn"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_weight="0"
+            android:text="สำเร็จ"
+            android:background="@drawable/rounded_pink_background"
+            style="@style/TextStyle_smallHeader"
+            android:enabled="false"
+            android:visibility="visible"
+            />
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="right"
+            android:text="กรุณาเพิ่มวัตถุดิบ\nอย่างน้อย 1 รายการ"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

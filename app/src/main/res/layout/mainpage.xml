@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".Mainpage_Handling_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFE7E7"
+        >
+        <Button
+            android:id="@+id/infoEdit"
+            android:background="#FFE7E7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="แก้ไขข้อมูล📝"
+            android:padding="5dp"
+            android:fontFamily="@font/umpush_bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|right"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:fontFamily="@font/umpush_bold"
+                android:textSize="12dp"
+                android:text="สถานะสารอาหาร : "/>
+            <Button
+                android:id="@+id/notiBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25"
+                android:text="ปกติ"
+                android:background="@drawable/pink_shadow"
+                android:fontFamily="@font/umpush_bold"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_weight="1"
+    >
+    <LinearLayout
+        android:background="@drawable/yellow_shadow"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ปริมาณแคลอรีที่ต้องการต่อวัน"
+            style="@style/TextStyle_smallHeader"
+            />
+        <TextView
+            android:id="@+id/caloriesNeedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ปริมาณแคลอรีที่ต้องการอีกในวันนี้"
+            style="@style/TextStyle_smallHeader"
+            />
+        <TextView
+            android:id="@+id/caloriesLeftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+
+            />
+
+
+    </LinearLayout
+        >
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:id="@+id/layoutFoodcal"
+            android:background="@drawable/pink_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            >
+            <TextView
+                style="@style/TextStyle_smallHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="คำนวณพลังงานจากการปรุงอาหาร" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutReccom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/lightpink_shadow"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextStyle_smallHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="เมนูแนะนำ"
+                android:textColor="#000" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutActivityRec"
+            android:background="@drawable/lightpink_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            >
+            <TextView
+                style="@style/TextStyle_smallHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="ตรวจจับกิจกรรม" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <ImageView
+                android:layout_gravity="center|left"
+                android:id="@+id/clearFileBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/reset"
+                />
+            <TextView
+                android:layout_gravity="center|left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="ล้างข้อมูลทั้งหมด"/>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/TextStyle_smallHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:text="....." />
+    </LinearLayout>
+
+</LinearLayout>

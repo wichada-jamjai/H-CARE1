@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".Add_Menu_Activity">
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:background="@color/myLightPink"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="เมนูอาหารสำหรับวันนี้"
+        style="@style/TextStyle_bigHeader"
+        />
+
+    <LinearLayout
+        android:id="@+id/main_table"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/addBreakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_add_button"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/bfpic"
+                    android:src="@drawable/addbreakfast" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextStyle_smallHeader"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/bftxt"
+                android:text="เพิ่มเมนูอาหารเช้า" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addLunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_add_button"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/lpic"
+                    android:src="@drawable/addlunch" />
+            </LinearLayout>
+            <TextView
+                style="@style/TextStyle_smallHeader"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/ltxt"
+                android:text="เพิ่มเมนูอาหารกลางวัน" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addDinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_add_button"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/dnpic"
+                    android:src="@drawable/adddinner" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextStyle_smallHeader"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/dntxt"
+                android:text="เพิ่มเมนูอาหารเย็น" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ล้างข้อมูลอาหาร"/>
+            <ImageView
+                android:id="@+id/clearFileBtn2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/reset" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="พลังงานจากอาหารสะสม : "
+                android:textSize="16dp" />
+            <TextView
+                android:textSize="16dp"
+                android:id="@+id/caloriesToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0 แคลอรี"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="ไขมันจากอาหารสะสม : "
+                />
+            <TextView
+                android:textSize="16dp"
+                android:id="@+id/fatToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0 กรัม"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="โปรตีนจากอาหารสะสม : "
+                />
+            <TextView
+                android:textSize="16dp"
+                android:id="@+id/proteinToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0 กรัม"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myLightPink"
+        >
+        <Button
+            android:id="@+id/backBtn1"
+            android:background="#00FFFFFF"
+            style="@style/TextStyle_smallHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u003c ย้อนกลับ"
+            android:layout_margin="2dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

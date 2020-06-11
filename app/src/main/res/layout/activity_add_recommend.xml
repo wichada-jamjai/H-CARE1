@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".Add_Recommend">
+
+    <TextView
+        style="@style/TextStyle_bigHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/myLightPink"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="เมนูแนะนำ" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/pink_shadow"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/menu_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/food01"
+                        android:gravity="end">
+
+                        <Button
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="#97FFF5F5"
+                            android:text="อ่านสูตร📖" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_shadow"
+                        android:padding="5dp"
+                        android:text="มัจฉาแต่งองค์(สำหรับ 2 ท่าน)"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="พลังงาน 175 แคลอรีต่อ 1 ท่าน" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-เหมาะกับผู้ป่วยความดันโลหิตสูง" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        >
+                    <Button
+                        android:id="@+id/rec1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เพิ่มเมนู"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:background="@drawable/pink_shadow"
+                        android:onClick="addReMenu">
+                    </Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/pink_shadow"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/menu_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/food02"
+                        android:gravity="end">
+
+                        <Button
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="#97FFF5F5"
+                            android:text="อ่านสูตร📖" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_shadow"
+                        android:padding="5dp"
+                        android:text="เถาเครือม้วนคำ(สำหรับ 2 ท่าน)"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="พลังงาน 177 แคลอรีต่อ 1 ท่าน" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-เหมาะกับผู้ป่วยความดันโลหิตสูง" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+                        <Button
+                            android:id="@+id/rec2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="เพิ่มเมนู"
+                            android:gravity="center"
+                            android:textSize="16dp"
+                            android:padding="5dp"
+                            android:background="@drawable/pink_shadow"
+                            android:onClick="addReMenu">
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/pink_shadow"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/menu_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/food03"
+                        android:gravity="end">
+
+                        <Button
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="#97FFF5F5"
+                            android:text="อ่านสูตร📖" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_shadow"
+                        android:padding="5dp"
+                        android:text="บัวบกคลุกฝุ่น(สำหรับ 2 ท่าน)"
+                        android:textSize="16dp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="พลังงาน 49 แคลอรีต่อ 1 ท่าน" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-เหมาะกับผู้ป่วยความดันโลหิตสูง" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                       >
+                        <Button
+                            android:id="@+id/rec3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="เพิ่มเมนู"
+                            android:gravity="center"
+                            android:textSize="16dp"
+                            android:padding="5dp"
+                            android:background="@drawable/pink_shadow"
+                            android:onClick="addReMenu">
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/pink_shadow"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/menu_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/food04"
+                        android:gravity="end">
+
+                        <Button
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="#97FFF5F5"
+                            android:text="อ่านสูตร📖" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_shadow"
+                        android:padding="5dp"
+                        android:text="ข้าวผัดหมู"
+                        android:textSize="16dp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="พลังงาน 412 แคลอรีต่อ 1 ท่าน" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-เหมาะกับผู้ป่วยเบาหวาน" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                     >
+                        <Button
+                            android:id="@+id/rec4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="เพิ่มเมนู"
+                            android:gravity="center"
+                            android:textSize="16dp"
+                            android:padding="5dp"
+                            android:background="@drawable/pink_shadow"
+                            android:onClick="addReMenu">
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/pink_shadow"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/menu_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/food05"
+                        android:gravity="end">
+
+                        <Button
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="#97FFF5F5"
+                            android:text="อ่านสูตร📖" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_shadow"
+                        android:padding="5dp"
+                        android:text="ข้าวต้มไก่"
+                        android:textSize="16dp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="พลังงาน 327 แคลอรีต่อ 1 ท่าน" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-เหมาะกับผู้ป่วยเบาหวาน" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                       >
+                        <Button
+                            android:id="@+id/rec5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="เพิ่มเมนู"
+                            android:gravity="center"
+                            android:textSize="16dp"
+                            android:padding="5dp"
+                            android:background="@drawable/pink_shadow"
+                            android:onClick="addReMenu">
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/pink_shadow"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/menu_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/food06"
+                        android:gravity="end">
+
+                        <Button
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="#97FFF5F5"
+                            android:text="อ่านสูตร📖" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_shadow"
+                        android:padding="5dp"
+                        android:text="ยำไข่ขาว"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="พลังงาน 150 แคลอรีต่อ 1 ท่าน" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-เหมาะกับผู้ป่วยโรคไต" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                      >
+                        <Button
+                            android:id="@+id/rec6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="เพิ่มเมนู"
+                            android:gravity="center"
+                            android:textSize="16dp"
+                            android:padding="5dp"
+                            android:background="@drawable/pink_shadow"
+                            android:onClick="addReMenu"
+                            >
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myLightPink">
+
+        <Button
+            android:id="@+id/backBtn2"
+            style="@style/TextStyle_smallHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="#00FFFFFF"
+            android:text="\u003c ย้อนกลับ" />
+    </LinearLayout>
+
+</LinearLayout>

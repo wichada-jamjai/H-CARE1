@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="warningRed">#FF0000</color>
+    <color name="normalText">#353535</color>
+    <color name="woodBrown">#B1A26B</color>
+    <color name="lightGray">#D2D7DF</color>
+    <color name="dimGray">#6A706E</color>
+    <color name="myPink">#FF6699</color>
+    <color name="myLightPink">#FFCCCC</color>
+
+</resources>

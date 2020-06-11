@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".Edit_Info_Activity">
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:background="@color/myLightPink"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="แก้ไขข้อมูล"
+        style="@style/TextStyle_bigHeader"
+        />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                >
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="น้ำหนัก"
+                    />
+                <EditText
+                    android:id="@+id/editWeight2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.9"
+                    android:hint="กก."
+                    android:inputType="number" />
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.9"
+                    android:gravity="left"
+                    android:text="กิโลกรัม"
+                    />
+
+                <Button
+                    android:id="@+id/editWeight"
+                    android:background="@drawable/yellow_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:text="📝แก้ไข" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="ส่วนสูง"
+                />
+            <EditText
+                android:id="@+id/editHeight2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:hint="ซม."
+                android:inputType="number" />
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:gravity="left"
+                android:text="เซนติเมตร"
+                />
+
+            <Button
+                android:id="@+id/editHeight"
+                android:background="@drawable/yellow_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.2"
+                android:text="📝แก้ไข" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/cancelEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@drawable/rounded_redpink_background"
+        android:layout_marginRight="25dp"
+        android:text="ยกเลิก"
+        />
+    <Button
+        android:id="@+id/submitEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_pink_background"
+        android:layout_marginLeft="25dp"
+        android:text="บันทึก"
+        />
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Info_Activity"
+   android:padding="10dp"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        style="@style/TextStyle_bigHeader"
+        android:layout_gravity="center"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ข้อมูลพื้นฐาน"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/infoLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:hint="กรอกชื่อ และนามสกุล"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!-- <LinearLayout
+             android:layout_marginBottom="12dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 >
+                 <TextView
+                    style="@style/TextStyle_smallHeader"
+                     android:gravity="left"
+                     android:layout_width="120dp"
+                     android:layout_height="32dp"
+                     android:text="อายุ"/>
+                 <EditText
+                     android:id="@+id/editAge1"
+                     android:layout_width="match_parent"
+                     android:layout_height="64dp"
+                     android:inputType="number"/>
+
+
+             </LinearLayout>
+         </LinearLayout>-->
+        <TextView
+            android:id="@+id/stringBmr"
+            style="@style/TextStyle_smallHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="วัน เดือน ปี เกิด" />
+
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextStyle_smallHeader"
+                    android:layout_width="75dp"
+                    android:layout_height="32dp"
+
+                    android:text="น้ำหนัก"
+                   />
+
+                <EditText
+                    android:id="@+id/editWeight1"
+                    android:layout_width="100dp"
+                    android:layout_height="52dp"
+                    android:hint="กก."
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextStyle_smallHeader"
+                    android:layout_width="75dp"
+                    android:layout_height="32dp"
+                    android:text="ส่วนสูง"
+                    />
+
+                <EditText
+                    android:id="@+id/editHeight1"
+                    android:layout_width="100dp"
+                    android:layout_height="52dp"
+                    android:hint="ซม."
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+<!--            <TextView-->
+<!--                style="@style/TextStyle_smallHeader"-->
+<!--                android:layout_width="95dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="left"-->
+<!--                android:text="หมายเลข\nโทรศัพท์"-->
+<!--                 />-->
+
+            <EditText
+                android:id="@+id/editNumber1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="กรอกหมายเลขโทรศัพท์"
+                android:inputType="phone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_margin="5px"
+            android:text="กรุณากรอกข้อมูลให้ครบถ้วน\nก่อนดำเนินการขั้นต่อไป"
+            android:textColor="@color/warningRed"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_gravity="bottom">
+
+            <ImageButton
+                android:id="@+id/buttonNext2"
+                style="@style/TextStyle_Button_Enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_noclickable_next"
+                android:paddingLeft="50dp"
+                android:paddingTop="25dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="25dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

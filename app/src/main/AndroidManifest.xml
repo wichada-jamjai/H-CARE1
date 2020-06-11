@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a401app_v1">
+
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_hcare"
+        android:label="H-CARE"
+        android:roundIcon="@mipmap/ic_hcare"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Add_Recommend"></activity>
+        <activity android:name=".activity_recognize_home" />
+        <activity android:name=".Recommend_Home_Activity" />
+        <activity android:name=".Recommend_Activity" />
+        <activity android:name=".Recognize_Activity" />
+        <activity android:name=".Edit_Info_Activity" />
+        <activity
+            android:name=".Notification_Activity"
+            android:theme="@style/myPopup" />
+        <activity android:name=".Add_Menu_Activity" />
+        <activity android:name=".Rice_Select_Activity" />
+        <activity android:name=".Milk_Select_Activity" />
+        <activity android:name=".Spices_Select_Activity" />
+        <activity android:name=".Veggi_Select_Activity" />
+        <activity android:name=".Fruit_Select_Activity" />
+        <activity android:name=".Meat_Select_Activity" />
+        <activity android:name=".Select_Activity" />
+        <activity android:name=".Add_Ingredient_Activity" />
+        <activity android:name=".Info_Activity" />
+        <activity android:name=".Disease_Activity" />
+        <activity android:name=".Mainpage_Handling_Activity" />
+        <activity
+            android:name=".Food_Name_Popup"
+            android:theme="@style/myPopup" />
+        <activity android:name=".Gender_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".services.DetectedActivityIntentService" />
+        <service android:name=".services.ActivityDetectionService" />
+    </application>
+
+</manifest>

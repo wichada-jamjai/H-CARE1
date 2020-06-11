@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".Recommend_Activity">
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/food01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/menuName"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:background="@color/myLightPink"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="กำลังโหลดชื่ออาหาร ..."
+            style="@style/TextStyle_bigHeader"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/menuDes"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="กำลังโหลดข้อมูลอาหาร ..."
+                />
+            <ImageView
+                android:id="@+id/menuPic"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/food01"
+                />
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myLightPink"
+        >
+        <Button
+            android:id="@+id/backBtn4"
+            android:background="#00FFFFFF"
+            style="@style/TextStyle_smallHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u003c ย้อนกลับ"
+            android:layout_margin="2dp"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fruit_Select_Activity"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:background="@color/myLightPink"
+        style="@style/TextStyle_bigHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="เลือกผัก" />
+    <LinearLayout
+        android:id="@+id/search"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/se_veggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addbu1"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/addbu2"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/addbu3"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/addbu4"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu5"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu6"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu7"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu8"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu9"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu10"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu11"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu12"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu13"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu14"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu15"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu16"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu17"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu18"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/addbu19"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_add_button"
+                android:text=" "
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/add_amount" />
+</LinearLayout>
